@@ -1,0 +1,100 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background:#fff;
+    /* margin-bottom: 3rem; */
+}
+
+.brand {
+    
+    height: 37px;
+    width: 201px;
+    /* background-color: tomato; */
+    background-image: url('/public/img/amazonie.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.nav-list{
+ display: flex;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+li > a{
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #ceaef8;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 2rem;
+}
+
+.fa-solid {
+    color: white;
+    overflow: hidden;
+    display: none;
+
+}
+
+
+@media screen and (max-width : 1040px) {
+        html, body {
+            /* background-color:brown; */
+        }
+
+        .nav-list{
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 59px;
+            background-color: black;
+            padding: 50px;
+
+        }
+
+        .show{
+            display: block;
+        }
+
+        .fa-solid {
+            color: white;
+            display: block;
+        
+        }
+
+    }
+
+
+    @media screen and (max-width : 480px) {
+
+        html, body {
+            /* background-color: aqua; */
+        }
+    }

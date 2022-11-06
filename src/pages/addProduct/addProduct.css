@@ -1,0 +1,20 @@
+.addproduct-container{
+    display: flex;
+    background: rgb(213,174,255);
+    background: linear-gradient(155deg, rgb(202, 166, 241) 0%, rgba(255,255,255,1) 53%);
+    padding: 3rem;
+}
+
+.title-addproduct{
+    margin-right: 10rem;
+}
+
+@media screen and (max-width : 1024px) {
+    
+    .addproduct-container{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+}
+

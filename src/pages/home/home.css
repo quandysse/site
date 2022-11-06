@@ -1,0 +1,127 @@
+
+.container-all{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.container1{
+    display: flex;
+    /* justify-content: space-between; */
+    width: auto;
+    height: 25rem;
+    background: rgb(213,174,255);
+    background: linear-gradient(155deg, rgb(202, 166, 241) 0%, rgba(255,255,255,1) 53%);
+    padding: 3rem;
+}
+
+.container1 h1{
+    font-size: 70px;
+    padding-bottom: 3rem;
+}
+
+.container1 button{
+    border: none;
+    height: 62px;
+    width: 273px;
+    left: 81px;
+    top: 429px;
+    border-radius: 50px;
+    background-color: #8130E9;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+   
+
+}
+
+.container2{
+    height: 100%;
+    width: 55%;
+}
+
+.title2{
+    margin-bottom: 1.5rem;
+}
+.container3{
+    height: 80%;
+    width: 31%;
+    margin-right: 3rem;
+    background-image: url('/public/img/jordan.png');
+    transform: rotate(-20deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards-container{
+    display: flex;
+}
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    padding: 3rem;
+}
+
+.container4 .cards-container{
+    display: flex;
+    
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width : 1100px) {
+
+    .container2 h1{
+        font-size: 55px;
+        
+    }
+
+    .container2 button{
+        height: 52px;
+        width: 243px;
+        font-size: 16px;
+    }
+
+    .container3{
+        height: 65%;
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width : 840px) {
+
+    .container2 h1{
+        font-size: 40px;
+    }
+
+    .container2 button{
+        height: 42px;
+        width: 180px;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width : 640px) {
+
+    .container1{
+        
+        height: 20rem;
+        
+    }
+
+    .container2 h1{
+        font-size: 30px;
+    }
+    
+    .container3{
+        overflow: hidden;
+    }
+}
